@@ -169,7 +169,7 @@ In future versions, this app will:
 ### 4. Module Not Found Error:
   - 4.1 Make sure you have installed requirements.txt
 
-### UnicodeDecodeError: 'utf-8' codec can't decode byte in position X
+### 5. UnicodeDecodeError: 'utf-8' codec can't decode byte in position X
   - 5.1 This usually means the file you’re trying to read contains non-UTF-8 characters. To fix this:
 ```bash
 with open('filename.txt', encoding='latin-1') as f:
