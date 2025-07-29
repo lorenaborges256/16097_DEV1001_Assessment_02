@@ -168,3 +168,15 @@ In future versions, this app will:
  ```
 ### 4. Module Not Found Error:
   - 4.1 Make sure you have installed requirements.txt
+
+### UnicodeDecodeError: 'utf-8' codec can't decode byte in position X
+  - 5.1 This usually means the file you’re trying to read contains non-UTF-8 characters. To fix this:
+```bash
+with open('filename.txt', encoding='latin-1') as f:
+    content = f.read()
+```
+  - 5.2 Alternatively, inspect the file's encoding with a tool like chardet to determine the correct codec:
+```bash 
+pip install chardet
+chardet filename.txt
+```
