@@ -19,11 +19,11 @@ This CLI tool is built for rapid testing and demonstrates the potential architec
 
 - **Stock Interaction**
   - Add or delete products from `stock.txt`
-  - View the current product list at any time
+  - View the current product list at any time.
 
 - **Email Notification**
-  - Opt-in to receive email alerts when products are restocked
-  - Emails sent using Gmail SMTP; credentials stored in `credentials.txt` (ignored by version control)
+  - Users shoul Opt-in to receive emmail alerts when products are restocked.
+  - Emails will be sent using Gmail SMTP; credentials are stored in `credentials.txt` (ignored by version control)
 
 - **Session Monitoring**
   - Background stock monitor activates upon app exit
