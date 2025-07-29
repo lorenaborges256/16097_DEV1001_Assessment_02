@@ -4,11 +4,7 @@ from email.mime.text import MIMEText
 
 
 class Notifier:
-    def __init__(
-        self,
-        sent_notifications_file="data/sent_notifications.json",
-        credentials_file="data/credentials.txt",
-    ):
+    def __init__(self, sent_notifications_file="data/sent_notifications.json", credentials_file="data/credentials.txt",):
         self.sent_notifications_file = sent_notifications_file
         self.sent_notifications = self.load_sent_notifications()
         self.smtp_credentials = self.load_credentials(credentials_file)
