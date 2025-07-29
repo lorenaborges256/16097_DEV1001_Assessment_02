@@ -68,7 +68,7 @@ class StockMonitor:
         self.previous_stock = current_stock  # Update tracking reference
         return False  # Keep monitoring
 
-    def monitor_stock(self, interval=10, timeout=20):
+    def monitor_stock(self, interval=12, timeout=22):
         """Monitor stock until an update occurs or timeout is reached."""
         print("🚀 Stock monitoring started... Checking every 10 seconds.")
         start_time = time.time()
