@@ -1,6 +1,7 @@
 # testes/test_errors.py
 import pytest
 from src.user_auth import UserAuth
+from src.stock_checker import StockChecker
 
 def test_valid_email():
     auth = UserAuth()
@@ -24,3 +25,11 @@ def test_find_user_by_email_not_existing():
     result = auth.find_user_by_email("joana@example.com")
     assert result is None
 
+def test_valid_product():
+    checker = StockChecker()
+    assert checker.validate_product("Conditioner") is True
+
+def test_invalid_product():
+    checker = StockChecker()
+    result = checker.validate_product("Face Cream")
+    assert result is False
