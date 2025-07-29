@@ -3,7 +3,6 @@ import time
 from stock_checker import StockChecker
 from notifier import Notifier
 
-
 class StockMonitor:
     def __init__(self, stock_file="data/stock.txt", notifications_file="data/notifications.json"):
         self.stock_checker = StockChecker(stock_file)
@@ -22,6 +21,7 @@ class StockMonitor:
         self.stock_checker.refresh_stock()  # Ensure fresh data before checking updates
         current_stock = self.stock_checker.stock_data  # Use refreshed stock data
         print(f"📦 Current stock levels: {current_stock}")
+
 
         try:
             with open(self.notifications_file, "r") as file:
