@@ -65,11 +65,10 @@ def main():
         )
 
         if next_action == "exit":
-            cowsay.tux(f"\n👋 Thank you for using {header.app_name} \nGoodbye!")
+            cowsay.dragon(f"\n👋 Thank you for using {header.app_name} \nGoodbye!")
             print("\n")
             print("--" * 50)
-            print(
-                "\n🛠️ -- Message for testing purposes only — hidden from the user. 🛠️ \nStock monitoring will start. \n⚠️Please manually update data/stock.txt now to complete the sent notification test. ⚠️"
+            print("\n🛠️ -- Message for testing purposes only — hidden from the user. 🛠️ \nStock monitoring will start. \n⚠️Please manually update data/stock.txt now to complete the sent notification test. ⚠️"
             )
             print("\n")
 

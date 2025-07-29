@@ -37,7 +37,7 @@ def test_valid_product():
 
 def test_invalid_product():
     checker = StockChecker()
-    result = checker.validate_product("Face Cream")
+    result = checker.validate_product("NonExistentProduct")
     assert result is False
 
 
