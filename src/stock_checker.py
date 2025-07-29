@@ -8,6 +8,7 @@ logging.basicConfig(
 
 class StockChecker:
     def __init__(self, stock_file="data/stock.txt"):
+        
         self.stock_file = stock_file
         self.stock_data = self.check_stock()  # Load stock data on initialization
 

@@ -2,6 +2,11 @@
 import pytest
 from src.user_auth import UserAuth
 from src.stock_checker import StockChecker
+from src.notifier import Notifier
+import tempfile
+import os
+
+
 
 def test_valid_email():
     auth = UserAuth()
@@ -27,9 +32,27 @@ def test_find_user_by_email_not_existing():
 
 def test_valid_product():
     checker = StockChecker()
-    assert checker.validate_product("Conditioner") is True
+    result = checker.validate_product("Shampoo")
+    assert result is True
 
 def test_invalid_product():
     checker = StockChecker()
     result = checker.validate_product("Face Cream")
     assert result is False
+
+
+def test_load_credentials_reads_file_correctly():
+    content = "EMAIL=test@example.com\nPASSWORD=abc123"
+    with tempfile.NamedTemporaryFile(mode="w+", delete=False) as temp:
+        temp.write(content)
+        temp_filename = temp.name
+
+    notifier = Notifier()
+    credentials = notifier.load_credentials(temp_filename)
+
+    os.remove(temp_filename)  # Limpeza pós-teste
+
+    assert credentials == {
+        "EMAIL": "test@example.com",
+        "PASSWORD": "abc123"
+    }
