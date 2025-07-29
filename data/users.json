@@ -39,6 +39,46 @@
         {
             "Name": "Caio",
             "Email": "caiolucas@yahoo.com.br"
+        },
+        {
+            "Name": "Larissa",
+            "Email": "larissa.moura@gmail.com"
+        },
+        {
+            "Name": "Mateus",
+            "Email": "mateus.dev@hotmail.com"
+        },
+        {
+            "Name": "Fernanda",
+            "Email": "fernanda.style@yahoo.com"
+        },
+        {
+            "Name": "Bruno",
+            "Email": "bruno.techzone@gmail.com"
+        },
+        {
+            "Name": "Juliana",
+            "Email": "juliana.shop@outlook.com"
+        },
+        {
+            "Name": "Tiago",
+            "Email": "tiagocosta1987@yahoo.com.br"
+        },
+        {
+            "Name": "Sofia",
+            "Email": "sofia.lane@protonmail.com"
+        },
+        {
+            "Name": "Rafael",
+            "Email": "rafael.mkt@live.com"
+        },
+        {
+            "Name": "Camila",
+            "Email": "camila.design@gmail.com"
+        },
+        {
+            "Name": "Gabriel",
+            "Email": "gabriel.notifications@outlook.com"
         }
     ]
 }
