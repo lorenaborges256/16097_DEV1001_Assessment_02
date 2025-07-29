@@ -22,7 +22,7 @@ stock_checker = StockChecker()
 stock_monitor = StockMonitor()
 stock_data = (
     stock_checker.check_stock()
-)  # Call the method directly when checking stock updates # Get valid stock data
+    )  # Call the method directly when checking stock updates # Get valid stock data
 
 
 def main():

@@ -20,6 +20,6 @@ class Header:
 
         print("=" * 80)
         print(tabulate(header_table, tablefmt="fancy_grid"))
-        print("\n📦 Welcome to the Notification App!\n")
+        print("\n📦 Welcome to the Notify Me CLI Application!\n")
         print(self.description)
         print("=" * 80)
