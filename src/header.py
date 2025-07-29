@@ -7,7 +7,7 @@ class Header:
         self.version = "1.0 June 2025"
         self.description = (
             "This app notifies you via email when a product is back in stock.\n"
-            "It also checks stock levels and informs registered users if a desired product is available."
+            "It also checks stock levels and informs registered users if a desired product is available.\n"
         )
         self.timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -18,8 +18,8 @@ class Header:
             ["Session Started", self.timestamp]
         ]
 
-        print("=" * 60)
+        print("=" * 80)
         print(tabulate(header_table, tablefmt="fancy_grid"))
         print("\n📦 Welcome to the Notification App!\n")
         print(self.description)
-        print("=" * 60)
+        print("=" * 80)
